@@ -1,4 +1,8 @@
 # SoapUI Usage Instruction
+## SOAP or REST?
+SOAP is more general to be used in the large file format with fixed return type
+
+REST Provides a light-weight and flexible environment.
 ## Testing POST Functions
 1. Create New SOAP Project
 2. Add New TestSuite
