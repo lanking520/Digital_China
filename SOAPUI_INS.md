@@ -14,4 +14,11 @@ REST Provides a light-weight and flexible environment
 6. Data Source Loop
 7. Adding Request Data Type
 
-## Testing the REST Functions
+## What should I do?
+Create a command line type application that can do auto_test on all datatype such as GET, POST, DELETE.
+
+Method 1: "Fake" Using Eclipse Extension (Easy)
+
+Method 2: Directly using the API (Complicated) Time costing
+
+Expected to do both ways
