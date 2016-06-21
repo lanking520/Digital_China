@@ -7,6 +7,8 @@ Test Team Lead: Xin Hu
 
 Team Lead: Yuyang Nie
 
+Workflow: Customer-->Supplier-->UI Designer-->Programmer(Front)/Programmer(Back)-->Testers-->Programmer-->Tester....-->Supplier-->Customer
+
 No income, Refreshment Inclusive
 
 Flexible workloads: 9:00-18:00
@@ -18,7 +20,7 @@ This job will last from now to the 22th of August
 -  Internet test on the applications in the Cloud
 -  Hand_on testing (Black box) the Beta Apps
 -  Attention on Data import, file correction, format....
-
+-  Assist on Auto Terminal Programs' Development [6.21]
 
 ## 2016-06-21 Bot Terminal Test
 Previous Job: Resize matter not in the full zoom mode
