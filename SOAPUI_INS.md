@@ -1,6 +1,7 @@
 # SoapUI Usage Instruction
 ## SOAP or REST?
 SOAP is more general to be used in the large file format with fixed return type
+![My image](http://www.ibm.com/developerworks/cn/webservices/0907_rest_soap/images/3.jpg)
 
 REST Provides a light-weight and flexible environment.
 ## Testing POST Functions
