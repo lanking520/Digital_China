@@ -40,3 +40,13 @@ To get it worked:
 
 [Update]
 - SoapUI needed
+- Requirement of Soap: Java Script?
+Problem Found:
+1. The iQuick does not support resizing
+2. System Notice Error
+3. Public Uploading error, not supporting public fileshare
+4. [Functional Dev]The search result will not set to default after delete the previous searching criteria
+5. [Functional Dev]User cannot see his/her personal message
+6. Personal Note: Uploading file error (Undefined Undefined B)
+7. [Functional Dev] Import ics (General Format) of calendar event
+8. apply for reimbursement Error, cannot update data
