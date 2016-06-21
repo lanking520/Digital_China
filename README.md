@@ -1,7 +1,11 @@
 # Digital China 2016
-Software Testing Intern
+Software Testing Intern (Team iQuicker)
 
-Project Leads: Xin Hu
+Company Structure: HYBRID
+
+Test Team Lead: Xin Hu
+
+Team Lead: Yuyang Nie
 
 No income, Refreshment Inclusive
 
@@ -28,3 +32,6 @@ To get it worked:
 1. JUnit should be known
 
 2. Platform language (json?)
+
+[Update]
+- SoapUI needed
