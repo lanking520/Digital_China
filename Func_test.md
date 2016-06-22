@@ -3,7 +3,8 @@
 ## Project Description
 This project is aimed to help the software testers to test all of the functionalities of the apps in a few seconds. The current thinking is using JAVA to simulate GET, POST and DELETE commands in the HTTP protocol. Still under thinking stages. See what happened.
 ## Steps to solve the problems
-
+1. Create a simple robot that could auto login with data access
+2. Manipulate it with more access to more data and pages
 ### Safe Decision:
 On Windows:
 ```
