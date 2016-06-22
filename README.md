@@ -66,6 +66,8 @@ def grabSC(url):
 ```
 To get Cookies (Help you find what is returned)
 ```python
+import cookielib
+import urllib2
 def getCookies(url):
   cj = cookielib.CookieJar()
   opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
