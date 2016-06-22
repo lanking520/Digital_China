@@ -3,16 +3,17 @@
 ## Project Description
 
 ## Steps to solve the problems
-Safe Decision:
+
+### Safe Decision:
 On Windows:
-
+```
 chrome.exe --disable-web-security
-
+```
 On Mac:
 
 open /Applications/Google\ Chrome.app/ --args --disable-web-security
 
-Danger Decision:
+### Danger Decision:
 
 On Windows:
 
