@@ -32,3 +32,14 @@ Solution to the other problem:
 ```
 {"username":"18146618482","password":"MTIzNDU2Nzg=","rememberMe":true}
 ```
+Tried and worked functions
+```python
+    print cookie.name
+    print cookie.value
+    print cookie.expires
+    print cookie.path
+    print cookie.comment
+    print cookie.domain
+    print cookie.secure
+    print cookie.version
+```
