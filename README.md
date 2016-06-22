@@ -76,3 +76,11 @@ def getCookies(url):
   for index, cookie in enumerate(cj)
       print '[',index, ']',cookie
 ```
+Today's Summary
+1. Cookies and Source Code are good to have now
+2. POST Function are still under developing
+3. How to get the next page's data if passed?
+4. How to make the system flexible to be modified to be used everytime?
+```
+https://www.iquicker.com.cn/iquicker_web/
+```
