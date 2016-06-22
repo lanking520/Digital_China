@@ -64,3 +64,13 @@ def grabSC(url):
   return source_code
   #return_type: String
 ```
+To get Cookies (Help you find what is returned)
+```python
+def getCookies(url):
+  cj = cookielib.CookieJar()
+  opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
+  urllib2.install_opener(opener)
+  resp = urllib2.urlopen(url)    
+  for index, cookie in enumerate(cj)
+      print '[',index, ']',cookie
+```
