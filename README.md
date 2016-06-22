@@ -88,3 +88,13 @@ Today's Summary
 ```
 https://www.iquicker.com.cn/iquicker_web/
 ```
+How to apply the Datatype:json to my posting dataset????
+```
+<urllib2.Request instance at 0x10251f5f0>
+{
+  "success" : false,
+  "message" : "运行出错",
+  "status" : 500
+}
+geturl= https://www.iquicker.com.cn/iquicker_web/login
+```
