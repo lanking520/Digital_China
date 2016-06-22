@@ -50,3 +50,6 @@ Problem Found:
 6. Personal Note: Uploading file error (Undefined Undefined B)
 7. [Functional Dev] Import ics (General Format) of calendar event
 8. apply for reimbursement Error, cannot update data
+
+## 2016-06-22 More than a Terminal Test
+Things has changed. The test is focused more on the humanoid test -> Auto test on with the proxy server. The requirement has also been changed to test the functionalities. Will update this afternoon
