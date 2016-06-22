@@ -23,3 +23,7 @@ On Mac:
 ```
 open /Applications/Google\ Chrome.app/ --args --allow-file-access-from-files
 ```
+Solution to the other problem:
+```
+--user-data-dir
+```
