@@ -30,7 +30,8 @@ Solution to the other problem:
 ```
 ### Login Package (POST)
 ```
-{"username":"18146618482","password":"MTIzNDU2Nzg=","rememberMe":true}
+{"username":"18146618480","password":"MTIzNDU2Nzg=","rememberMe":true}
+header format: "application/json"
 ```
 Tried and worked functions
 ```python
