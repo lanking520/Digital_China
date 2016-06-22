@@ -53,3 +53,12 @@ Problem Found:
 
 ## 2016-06-22 More than a Terminal Test
 Things has changed. The test is focused more on the humanoid test -> Auto test on with the proxy server. The requirement has also been changed to test the functionalities. Will update this afternoon
+```python
+import urllib2
+def grabSC(url):
+  resp = urllib2.urlopen(url)
+  source_code = resp.read()
+  #print "Source Code:", Source_code
+  return source_code
+  #return_type: String
+```
