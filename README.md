@@ -98,7 +98,7 @@ How to apply the Datatype:json to my posting dataset????
 }
 geturl= https://www.iquicker.com.cn/iquicker_web/login
 ```
-## 2016-06-22 Go to a step further
+## 2016-06-23 Go to a step further
 After solving the major problem of data type into json:
 ```python
 my_dict={"username":"18146618480","password":"MTIzNDU2Nzg=","rememberMe":True}
