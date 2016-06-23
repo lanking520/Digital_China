@@ -113,3 +113,16 @@ With one of the "Org" chosen to the dictionary passed, we received this:
 ```
 {"success":true,"message":"登录成功","status":200,"data":{"initialised":true,"orgs":[]}}
 ```
+[update] Victory! News part finished!
+```
+Passed Basic Access!
+登录成功
+Passed Basic Access!
+success
+Passed Basic Access!
+success
+Passed Basic Access!
+success
+Passed Basic Access!
+success
+```
