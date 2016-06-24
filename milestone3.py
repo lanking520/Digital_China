@@ -1,3 +1,9 @@
+"""
+Name: Working Example for the News System
+Author: Qing Lan
+Copyright: Personal and Test Team in "iQuicker"
+Description: Comparing to Milestone two, one News Class is created to regularize the test subjects
+"""
 import cookielib
 import urllib2
 import urllib
