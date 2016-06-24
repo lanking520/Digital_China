@@ -126,3 +126,5 @@ success
 Passed Basic Access!
 success
 ```
+## 2016-06-24 Data structure...
+Today's job is to finish the Tasks section. Similiar to the previous Calendar, this section will only requires GET, POST and DELETE commands. However, the problem might occurs in adding/ modifying/ delecting subjects. Let's see what will happened then. The major obstacles LoL.
