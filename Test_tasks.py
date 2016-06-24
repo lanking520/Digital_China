@@ -131,7 +131,7 @@ for i in range(len(user_data)):
     id_book.append(user_data[i]['uuid'])
     name_book.append(user_data[i]['name'])
 
-#reach to the Tasks Section
+#Get Unfinished Task List
 Tasks_url = "http://testwww.iquicker.com.cn/iquicker_web/task/tasks"
 Data_tasks = {"isOver" : False, "page" : 1, "pageSize" : 20, "sortType" : 1, "type" : 0}
 Task_info = GET(Tasks_url,Data_tasks)
@@ -140,6 +140,16 @@ Task_info = json.loads(Task_info)
 Task_info = Task_info['data']['content']
 for i in range(len(Task_info)):
     Task_id.append(Task_info[i]['id'])
+
+#Get Finished Task List
+Tasks_url = "http://testwww.iquicker.com.cn/iquicker_web/task/tasks"
+Data_tasks = {"isOver" : True, "page" : 1, "pageSize" : 20, "sortType" : 1, "type" : 0}
+Task_info = GET(Tasks_url,Data_tasks)
+Finished_Task_id = []
+Task_info = json.loads(Task_info)
+Task_info = Task_info['data']['content']
+for i in range(len(Task_info)):
+    Finished_Task_id.append(Task_info[i]['id'])
 
 #Start Posting Tasks!
 Post_task_url = "http://testwww.iquicker.com.cn/iquicker_web/task/tasks"
@@ -152,9 +162,15 @@ Post_task_url = "http://testwww.iquicker.com.cn/iquicker_web/task/tasks"
 Post_kernel = {"id": Task_id[-1], "subject" : "RobotSendModify", "principals" : [{"id": id_book[0] , "name": name_book[0]}], "participants":[{"id": id_book[0] , "name": name_book[0]}], "endDate" : "2017-06-24T16:00:00.000Z", "priority" : 3, "detail" : "This is a Modified Message" , "shared" : False ,"attList": None, "publishScope" : ["company"], "publishScopeName" : ["/u5168/u516C/u53F8"]}
 POST(Post_task_url,Post_kernel)
 
+#Label_finished
+Label_url = "http://testwww.iquicker.com.cn/iquicker_web/task/tasks/" + str(Task_id[-1]) + "/completion"
+PUT(Label_url)
+
+#Label_Unfinished
+UnLabel_url = "http://testwww.iquicker.com.cn/iquicker_web/task/tasks/" + str(Finished_Task_id[-1]) + "/incompletion"
+PUT(Label_url)
 
 #Start Delete the Task!
 Delete_url = "http://testwww.iquicker.com.cn/iquicker_web/task/tasks/" + str(Task_id[-1])
 #go_To_TASK
 DELETE(Delete_url)
-
