@@ -156,3 +156,22 @@ def show_off_all_data(self):
         print "Not supported port: " + str(self.port_type_warning)
         print "Please check the dictionary for more information"
 ```
+Core Function:
+```python
+def title_exporter(dictionary):
+    my_dict_titles = []
+    try:
+        my_dict_titles.append(dictionary.keys())
+        for key in dictionary:
+            if isinstance(dictionary[key], dict):
+                my_dict_titles.append(title_exporter(dictionary[key]))
+            if isinstance(dictionary[key], list):
+                if len(dictionary[key]):
+                    if isinstance(dictionary[key][0],dict):
+                        my_dict_titles.append(title_exporter(dictionary[key][0]))
+    except:
+        if isinstance(dictionary, list):
+            my_dict_titles.append(title_exporter(dictionary[0]))
+    #print my_dict_titles
+    return my_dict_titles
+```
