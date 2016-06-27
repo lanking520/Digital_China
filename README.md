@@ -175,3 +175,10 @@ def title_exporter(dictionary):
     #print my_dict_titles
     return my_dict_titles
 ```
+After several days' practice, now let's make a summary of the Terminal Test class creation procedure:
+
+### WORKING METHOD
+- Step 1: Access All information in draft
+- Step 2: Pack them into Class
+- Step 3: Adding Test environment
+- Step 4: Adding Template and finish the program
