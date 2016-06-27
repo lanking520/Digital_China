@@ -143,3 +143,16 @@ In this week, the total project should be done as quick as possible in order to 
 ```
 TypeError: not a valid non-string sequence or mapping object
 ```
+The solution for previous error is to delete the data... not good.
+
+[update]
+Error Function added, however, the test system structure need to be redesigned
+```python
+def show_off_all_data(self):
+        print "................................................"
+        print "System runs: " + str(self.times) + " times"
+        print "Error Counts: " + str(len(self.error_count)) + " times"
+        print "Failure in: " + str(self.error_count)
+        print "Not supported port: " + str(self.port_type_warning)
+        print "Please check the dictionary for more information"
+```
