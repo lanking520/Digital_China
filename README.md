@@ -140,3 +140,6 @@ Hence, by the end of Friday, the Class of Tasks has been done. Hopefully, all of
 ## 2016-06-27 As quick as possible!
 
 In this week, the total project should be done as quick as possible in order to reach to the next step. Feeling a liitle sad today, I am not sure what I am about to next.
+```
+TypeError: not a valid non-string sequence or mapping object
+```
