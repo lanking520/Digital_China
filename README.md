@@ -182,3 +182,11 @@ After several days' practice, now let's make a summary of the Terminal Test clas
 - Step 2: Pack them into Class
 - Step 3: Adding Test environment
 - Step 4: Adding Template and finish the program
+
+## 2016-06-28 Maintain the entire system
+
+Several new feature were added to the new system on the testing part. The core function could identify and export the data structure of List + Dictionary. Please Call Function to test this feature.
+```python
+title_exporter(dictionary)
+```
+Today, we will move on to some new tasks to maintain all of the features. Let's see what happened.
