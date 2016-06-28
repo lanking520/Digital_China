@@ -190,3 +190,6 @@ Several new feature were added to the new system on the testing part. The core f
 title_exporter(dictionary)
 ```
 Today, we will move on to some new tasks to maintain all of the features. Let's see what happened.
+
+[update]
+Now the developing speed doubles, the expected finish time is day after tomorrow. Speed it up!
