@@ -196,3 +196,6 @@ Today, we will move on to some new tasks to maintain all of the features. Let's 
 Now the developing speed doubles, the expected finish time is day after tomorrow. Speed it up!
 Currently, the life is a little bit boring, hope there will be some difference during the next day... Do insanity Max 30 Tonight!
 
+## 2016-06-29 WorkComm and Company News
+
+The programming speed are increasing in the recent days. Currently, the job are more focused on the whole, how will the test being conducted? How to ensure the reduction of error?
