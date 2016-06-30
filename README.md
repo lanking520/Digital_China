@@ -279,3 +279,8 @@ Please check the dictionary for more information
 New requirement: create csv/xls formatted list with the following settings:
 
 Num--Name--URL--Type--Result--Failure_reason
+
+### CSV Stored Data Structure
+```python
+My data_set = {"News" : [{"Name":"Get News", "URL" : "Http://News", "Success" : True, "Failure Reason" : "URL Fault}]}
+```
