@@ -274,3 +274,8 @@ Failure Url:
 Please check the dictionary for more information
 ...............Thank you........................
 ```
+[update]
+
+New requirement: create csv/xls formatted list with the following settings:
+
+Num--Name--URL--Type--Result--Failure_reason
