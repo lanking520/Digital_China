@@ -199,3 +199,78 @@ Currently, the life is a little bit boring, hope there will be some difference d
 ## 2016-06-29 WorkComm and Company News
 
 The programming speed are increasing in the recent days. Currently, the job are more focused on the whole, how will the test being conducted? How to ensure the reduction of error?
+
+## 2016-06-30 Adress Book Failure
+Some error occurred which was caused by the self.id_book[-1]. As a new person is added to the system, the previous self.id_book[0] changed to self.id_book[-1] or whatsoever.
+'''
+................................................
+...............News Function Summary............
+Function runs: 4 times
+Error Counts: 0 times
+Failure in: []
+Not supported port: []
+Failure Url:
+Please check the dictionary for more information
+...............Thank you........................
+................................................
+...............Task Function Summary............
+Function runs: 16 times
+Error Counts: 6 times
+Failure in: [4, 4, 4, 5, 4, 4]
+Not supported port: [3]
+Failure Url:
+http://testwww.iquicker.com.cn/iquicker_web/task/tasks/
+http://testwww.iquicker.com.cn/iquicker_web/task/tasks/
+http://testwww.iquicker.com.cn/iquicker_web/task/tasks/
+http://testwww.iquicker.com.cn/iquicker_web/task/tasks/
+http://testwww.iquicker.com.cn/iquicker_web/task/tasks/
+http://testwww.iquicker.com.cn/iquicker_web/task/tasks/
+Please check the dictionary for more information
+...............Thank you........................
+................................................
+...........Calendar Function Summary............
+Function runs: 8 times
+Error Counts: 3 times
+Failure in: [3, 3, 3]
+Not supported port: [2]
+Failure Url:
+http://testwww.iquicker.com.cn/iquicker_web/schedul/app
+http://testwww.iquicker.com.cn/iquicker_web/schedul/app
+http://testwww.iquicker.com.cn/iquicker_web/schedul/app
+Please check the dictionary for more information
+...............Thank you........................
+................................................
+...........Work Communication Function Summary............
+Function runs: 14 times
+Error Counts: 7 times
+Failure in: [4, 4, 4, 4, 8, 4, 9]
+Not supported port: [3]
+Failure Url:
+http://testwww.iquicker.com.cn/iquicker_web/wcontact/contact-applys/
+http://testwww.iquicker.com.cn/iquicker_web/wcontact/contact-applys/
+http://testwww.iquicker.com.cn/iquicker_web/wcontact/contact-applys/
+http://testwww.iquicker.com.cn/iquicker_web/wcontact/contact-applys/
+http://testwww.iquicker.com.cn/iquicker_web/wcontact/contact-applys/5774c04ae4b0aef4ea1d659c/agreement
+http://testwww.iquicker.com.cn/iquicker_web/wcontact/contact-applys/
+http://testwww.iquicker.com.cn/iquicker_web/wcontact/contact-applys/5774c04ae4b0aef4ea1d659c/rejection
+Please check the dictionary for more information
+...............Thank you........................
+................................................
+...........Company News Function Summary............
+Function runs: 11 times
+Error Counts: 0 times
+Failure in: []
+Not supported port: []
+Failure Url:
+Please check the dictionary for more information
+...............Thank you........................
+................................................
+...........Company News Function Summary............
+Function runs: 10 times
+Error Counts: 0 times
+Failure in: []
+Not supported port: [2]
+Failure Url:
+Please check the dictionary for more information
+...............Thank you........................
+'''
