@@ -200,7 +200,7 @@ Currently, the life is a little bit boring, hope there will be some difference d
 
 The programming speed are increasing in the recent days. Currently, the job are more focused on the whole, how will the test being conducted? How to ensure the reduction of error?
 
-## 2016-06-30 Adress Book Failure
+## 2016-06-30 Address Book Failure
 Some error occurred which was caused by the self.id_book[-1]. As a new person is added to the system, the previous self.id_book[0] changed to self.id_book[-1] or whatsoever.
 ```
 ................................................
@@ -297,3 +297,4 @@ def name_extractor(my_array):
             result_array.append(my_array[i])
     return result_array
 ```
+The function written above will extract all cascaded array into a single array. The final decision on the comparison is to compare the Strings in Alphabetical order.
