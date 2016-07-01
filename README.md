@@ -287,3 +287,13 @@ My_data_set = {"News" : [{"Name":"Get News", "URL" : "Http://News", "Success" : 
 ## 2016-07-01 New Month and the end of the weekdays
 
 Been here for two weeks now. Hopefully most of the functions will be done by today. The data structure output will be solved as soon as possible.
+```python
+def name_extractor(my_array):
+    result_array = []
+    for i in range(len(my_array)):
+        if isinstance(my_array[i], list):
+            result_array.extend(name_extractor(my_array[i]))
+        else:
+            result_array.append(my_array[i])
+    return result_array
+```
