@@ -284,3 +284,6 @@ Num--Name--URL--Type--Result--Failure_reason
 ```python
 My_data_set = {"News" : [{"Name":"Get News", "URL" : "Http://News", "Success" : True, "Failure Reason" : "URL Fault"}]}
 ```
+## 2016-07-01 New Month and the end of the weekdays
+
+Been here for two weeks now. Hopefully most of the functions will be done by today. The data structure output will be solved as soon as possible.
