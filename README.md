@@ -302,3 +302,16 @@ The function written above will extract all cascaded array into a single array. 
 ## 2016-07-04 Try to solve the upload Problem and finish the rest first
 
 During the Friday Failure, it may be necessary to finish the rest part first.
+
+[Update]
+
+Sadly, right at this moment, I have wasted another day in solving the problem. The problem can hardly be solved. The problem occurred on the system side, the data being transferred to the central system cannot be splited into header and body section. The error indicate that the boundary are no longer working. By using Fiddler, a detailed comparision between my device/mobile/PC has begun. 
+```
+transfer-encoding: Chunked
+encoding-type: gzip
+```
+The statement above cannot live along with
+```
+Content-Length: xxxxx
+```
+As the chunked encoding type will dynamically allocate a reduce-sized image to the system. The PC terminal used the full size image and Mobile terminal use the chunked format. After I tried my package on both side, including adding the identical header, the problem remained unsolved. Hence, I will currently leave this problem aside. See if I can solved it in the future
