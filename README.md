@@ -298,3 +298,7 @@ def name_extractor(my_array):
     return result_array
 ```
 The function written above will extract all cascaded array into a single array. The final decision on the comparison is to compare the Strings in Alphabetical order.
+
+## 2016-07-04 Try to solve the upload Problem and finish the rest first
+
+During the Friday Failure, it may be necessary to finish the rest part first.
