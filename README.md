@@ -315,3 +315,15 @@ The statement above cannot live along with
 Content-Length: xxxxx
 ```
 As the chunked encoding type will dynamically allocate a reduce-sized image to the system. The PC terminal used the full size image and Mobile terminal use the chunked format. After I tried my package on both side, including adding the identical header, the problem remained unsolved. Hence, I will currently leave this problem aside. See if I can solved it in the future
+
+## 2016-07-05 Keep on working
+Last night I have received my final mark as well as my degree. Four years study came to the end. A First Class degree was offered with proud and fame.
+
+Well, let's get on the topic. In the morning session, blog structure is quite complicated.
+
+#### How do people reply a no-reply blog post?
+We just reply it directly with a masterId. We will receive:
+- a return value of masterId(the same)
+- Id(only used in showing off the replied message on the blog)
+- Another ID in the discussion (We use that to post the result)
+
