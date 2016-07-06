@@ -329,3 +329,23 @@ We just reply it directly with a masterId. We will receive:
 
 ## 2016-07-06 Attendance Section
 The majority of today is to find and use all possible terminals in the Attendace Section. Nothing more to say...
+
+#### Detailed sort(No damage to structure) and remove duplication
+```python
+def sort_my_array(my_array):
+    result_array = []
+    for i in range(len(my_array)):
+        if isinstance(my_array[i], list):
+            result_array.append(sort_my_array(my_array[i]))
+        else:
+            result_array.append(my_array[i])
+    result_array.sort()
+    return result_array
+
+def remove_duplications(my_array = []):
+    final_array = [my_array[0]]
+    for i in range(len(my_array)):
+        if (final_array[-1] != my_array[i]):
+            final_array.append(my_array[i])
+    return final_array
+```
