@@ -327,3 +327,5 @@ We just reply it directly with a masterId. We will receive:
 - Id(only used in showing off the replied message on the blog)
 - Another ID in the discussion (We use that to post the result)
 
+## 2016-07-06 Attendance Section
+The majority of today is to find and use all possible terminals in the Attendace Section. Nothing more to say...
