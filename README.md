@@ -349,3 +349,5 @@ def remove_duplications(my_array = []):
             final_array.append(my_array[i])
     return final_array
 ```
+## 2016-07-07 Get Attendance Section done
+Will have this part done today
