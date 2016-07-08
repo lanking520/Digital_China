@@ -360,3 +360,9 @@ This part is more complicated than I thought. If you have post a leave request, 
 - Not for next Year (must be in a certain range)
 
 Another problem is that the leave request has two different types, a single day and multiple days. It did not come difficult when post them however frastrating when modifying them. The Single Day option came with an ID to post. The Multiple Days option came with a Group ID to post. These should be all found and identified in a array (usually the index range is the working days in month). In this case, more focus should be placed in this part, for both single/multiple day(s).
+
+#### How do I deal with these?
+```python
+my_leave_id = [u'ff80808155c40fd60155c45118eb003c', [u'eb83e281-3649-41e5-a3cb-ec5e432d7f79']]
+my_leave_id = [single_day_id, [multiple_day_id]]
+```
