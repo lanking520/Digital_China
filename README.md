@@ -351,3 +351,12 @@ def remove_duplications(my_array = []):
 ```
 ## 2016-07-07 Get Attendance Section done
 Will have this part done today
+
+## 2016-07-08 Attendance Post and modify
+This part is more complicated than I thought. If you have post a leave request, you have to consider the following factors:
+- Rest with Salary/ Rest without Salary
+- Days that I can have for rest (Unlimited without Salary)
+- No interference with other vacation
+- Not for next Year (must be in a certain range)
+
+Another problem is that the leave request has two different types, a single day and multiple days. It did not come difficult when post them however frastrating when modifying them. The Single Day option came with an ID to post. The Multiple Days option came with a Group ID to post. These should be all found and identified in a array (usually the index range is the working days in month). In this case, more focus should be placed in this part, for both single/multiple day(s).
