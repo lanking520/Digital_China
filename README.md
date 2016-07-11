@@ -350,6 +350,49 @@ def remove_duplications(my_array = []):
             final_array.append(my_array[i])
     return final_array
 ```
+Let's try out these code:
+```
+template = [[u'status', u'message', u'data', u'success'],
+            [[u'department', u'myId', u'totalpage', u'list', u'myName'],
+             [[u'storePeopleId', u'userId', u'relayTimes', u'id', u'publishScopeName', u'write', u'createDate',
+               u'goodPeopleId', u'content', u'publishScope', u'type', u'discussList', u'companyName', u'deleted',
+               u'readRight', u'createUser', u'org', u'userName', u'shareUserIds', u'applyNumber', u'publishTime',
+               u'writeRight', u'attList'],
+              [[u'source', u'master', u'discuss'],
+               [[u'storePeopleId', u'userId', u'relayTimes', u'id', u'publishScopeName', u'write', u'createDate',
+                 u'goodPeopleId', u'content', u'publishScope', u'type', u'discussList', u'companyName', u'deleted',
+                 u'readRight', u'createUser', u'org', u'userName', u'shareUserIds', u'applyNumber', u'publishTime',
+                 u'writeRight', u'attList'],
+                [[u'source', u'master', u'relay'],
+                 [[u'storePeopleId', u'userId', u'relayTimes', u'id', u'publishScopeName', u'write',
+                   u'createDate', u'goodPeopleId', u'content', u'publishScope', u'type', u'discussList',
+                   u'companyName', u'deleted', u'readRight', u'createUser', u'org', u'userName', u'shareUserIds',
+                   u'applyNumber', u'publishTime', u'writeRight', u'attList'],
+                  [[u'userIdNames', u'userId', u'id', u'publishScopeName', u'write', u'createDate', u'content',
+                    u'masterId', u'publishScope', u'discussList', u'relay', u'readRight', u'createUser', u'org',
+                    u'userName', u'shareUserIds', u'applyNumber', u'publishTime', u'writeRight', u'isFile',
+                    u'imgList', u'attList']]],
+                 [[u'userName', u'write', u'userIdNames', u'relay', u'shareUserIds', u'userId', u'publishTime',
+                   u'content', u'readRight', u'writeRight', u'imgList', u'publishScopeName', u'publishScope',
+                   u'org', u'isFile', u'id', u'attList', u'discussList']],
+                 [[u'userName', u'write', u'userIdNames', u'relay', u'shareUserIds', u'userId', u'publishTime',
+                   u'content', u'masterId', u'readRight', u'writeRight', u'publishScopeName', u'publishScope',
+                   u'org', u'isFile', u'id', u'attList', u'discussList']]],
+                [[u'discussedUserId', u'userIdNames', u'userId', u'discussedUserName', u'discussedId', u'write',
+                  u'createDate', u'id', u'content', u'masterId', u'publishScope', u'relay', u'readRight',
+                  u'createUser', u'org', u'userName', u'shareUserIds', u'applyNumber', u'publishTime', u'writeRight',
+                  u'isFile', u'attList']]],
+               [[u'userName', u'write', u'discussList', u'relay', u'shareUserIds', u'userId', u'publishTime',
+                 u'content', u'masterId', u'readRight', u'writeRight', u'publishScopeName', u'publishScope',
+                 u'org', u'isFile', u'id', u'attList', u'userIdNames']],
+               [[u'userName', u'content', u'discussedUserId', u'userIdNames', u'relay', u'isFile', u'shareUserIds',
+                 u'userId', u'publishTime', u'discussedId', u'write', u'masterId', u'readRight', u'writeRight', u'org',
+                 u'discussedUserName', u'id', u'attList']]]]]]
+
+print remove_duplications(name_extractor(sort_my_array(template)))
+
+[u'applyNumber', u'attList', u'companyName', u'content', u'createDate', u'createUser', u'data', u'deleted', u'department', u'discuss', u'discussList', u'discussedId', u'discussedUserId', u'discussedUserName', u'goodPeopleId', u'id', u'imgList', u'isFile', u'list', u'master', u'masterId', u'message', u'myId', u'myName', u'org', u'publishScope', u'publishScopeName', u'publishTime', u'readRight', u'relay', u'relayTimes', u'shareUserIds', u'source', u'status', u'storePeopleId', u'success', u'totalpage', u'type', u'userId', u'userIdNames', u'userName', u'write', u'writeRight']
+```
 ## 2016-07-07 Get Attendance Section done
 Will have this part done today
 
