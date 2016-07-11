@@ -366,3 +366,5 @@ Another problem is that the leave request has two different types, a single day 
 my_leave_id = [u'ff80808155c40fd60155c45118eb003c', [u'eb83e281-3649-41e5-a3cb-ec5e432d7f79']]
 my_leave_id = [single_day_id, [multiple_day_id]]
 ```
+## 2016-07-11 Finish off Attendance
+The major job for today: Get Out Leave section done and finish the management program
