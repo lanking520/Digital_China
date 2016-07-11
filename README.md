@@ -24,6 +24,7 @@ iQuicker is a innovative Internet Service to enable modern Company and Goverment
 -  Hand_on testing (Black box) the Beta Apps
 -  Attention on Data import, file correction, format....
 -  Assist on Auto Terminal Programs' Development [6.21]
+-  Major Developer of Terminal Test Program [6.28]
 
 ## 2016-06-21 Bot Terminal Test
 Previous Job: Resize matter not in the full zoom mode
@@ -365,6 +366,8 @@ Another problem is that the leave request has two different types, a single day 
 ```python
 my_leave_id = [u'ff80808155c40fd60155c45118eb003c', [u'eb83e281-3649-41e5-a3cb-ec5e432d7f79']]
 my_leave_id = [single_day_id, [multiple_day_id]]
+[update] : Due to the change of data structure:
+my_leave_id = [single_day_id, [id, multiple_day_id]]
 ```
 ## 2016-07-11 Finish off Attendance
 The major job for today: Get Out Leave section done and finish the management program
