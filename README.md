@@ -425,3 +425,30 @@ After testing the functionailites, another one helper function will be added to 
 template1 = [[[[[u'applyNo', u'attList', u'companyName', u'createDate', u'createUser', u'id', u'org', u'readRight', u'shareUserIds', u'typeName', u'write', u'writeRight']], [[u'selection', u'src', u'thumbnail']], [u'applyNo', u'attList', u'browses', u'circlePicPath', u'companyName', u'content', u'contentTitle', u'createDate', u'createUser', u'department', u'discusses', u'id', u'isCirclePic', u'isFile', u'isUp', u'isUpTime', u'mobilePicPath', u'org', u'picObj', u'publishScope', u'publishTime', u'readRight', u'shareUserIds', u'stores', u'tags', u'title', u'type', u'userId', u'userName', u'write', u'writeRight']], [u'list', u'totalpage']], [u'data', u'message', u'status', u'success']]
 template2 = [[[[[u'attList', u'companyName', u'createDate', u'createUser', u'id', u'org', u'readRight', u'shareUserIds', u'typeName', u'write', u'writeRight']], [[u'selection', u'src', u'thumbnail']], [u'attList', u'browses', u'circlePicPath', u'companyName', u'content', u'contentTitle', u'createDate', u'createUser', u'department', u'discusses', u'id', u'isCirclePic', u'isFile', u'isUp', u'isUpTime', u'mobilePicPath', u'org', u'picObj', u'publishScope', u'publishTime', u'readRight', u'shareUserIds', u'stores', u'tags', u'title', u'type', u'userId', u'userName', u'write', u'writeRight']], [u'list', u'totalpage']], [u'data', u'message', u'status', u'success']]
 ```
+#### Comparator Function and its helper
+```python
+def comparator(actual_data, template_data):
+    actual_data = list_to_dict(name_extractor(actual_data))
+    template_data = list_to_dict(name_extractor(template_data))
+    missing_list = []
+    for key in template_data.keys():
+        try:
+            key_result = template_data[key] - actual_data[key]
+        except:
+            missing_list.append(key)
+            key_result = 0
+        if (key_result < 0):
+            missing_list.append(key)
+
+    print missing_list
+
+def list_to_dict(my_list):
+    my_dict = {}
+    for i in my_list:
+        if my_dict.has_key(i):
+            my_dict[i] += 1
+        else:
+            my_dict[i] = 1
+    return my_dict
+```
+This function will compare two result template and return the missing list. It will only worked on the condition that actual result does not have something that template has. It could be developed to be more complicated however the simplified version maintain the basic requirement coming from the Mobile Team leads.
