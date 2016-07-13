@@ -414,3 +414,6 @@ my_leave_id = [single_day_id, [id, multiple_day_id]]
 ```
 ## 2016-07-11 Finish off Attendance
 The major job for today: Get Out Leave section done and finish the management program
+
+## 2016-07-13 Get Data Clearly Presented
+Has been a day off and today back to work. Now most (90%) of the terminal tests part were finished. The final workout has a total of 1700 lines of codes and costs around three weeks in exploring, writting and debugging. The major job for today is the export of the data and formatting the template. Most of the template code should be modified. See what happened...
