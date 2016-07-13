@@ -452,3 +452,12 @@ def list_to_dict(my_list):
     return my_dict
 ```
 This function will compare two result template and return the missing list. It will only worked on the condition that actual result does not have something that template has. It could be developed to be more complicated however the simplified version maintain the basic requirement coming from the Mobile Team leads.
+
+#### Rework on the Determine Error
+After several functional test, the current Determine Error Function could determine three different error types:
+
+- /Not pass the system test
+- /Kernel Comparison Failed, Missing: []
+- /No data
+
+it will also pack the data into the format indicate above.
