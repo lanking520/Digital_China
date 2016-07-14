@@ -474,4 +474,4 @@ Today, I am proudly announced that the Developer Version of Terminal Test Progra
 - Add more terminals in the system
 - Finish the unsolved terminal test
 - Add comments
-![image](https://github.com/lanking520/Digital_China/blob/master/tt.tiff)
+![image](https://github.com/lanking520/Digital_China/blob/master/tt.jpg)
