@@ -461,3 +461,14 @@ After several functional test, the current Determine Error Function could determ
 - /No data
 
 it will also pack the data into the format indicate above.
+## 2016-07-14 The worked Version
+Today, I am proudly announced that the Developer Version of Terminal Test Program is completed. Here are the new features added in the system:
+
+- Added CSV Export function
+- Template are more flexible to be compared
+- Added Stablities tests to ensure the program would run smoothly
+
+#### Future Tasks
+- Add more terminals in the system
+- Finish the unsolved terminal test
+- Add comments
