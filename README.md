@@ -475,3 +475,6 @@ Today, I am proudly announced that the Developer Version of Terminal Test Progra
 - Finish the unsolved terminal test
 - Add comments
 ![image](https://github.com/lanking520/Digital_China/blob/master/tt.jpg)
+
+## 2016-07-15 One more component
+Wait a second... There is something missing I guess. My logbook records that there are several URLs are forgot to check. The entire Weekly report section are missing. In this case, today I will focus on this section and try to have them done in no time.
