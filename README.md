@@ -478,3 +478,14 @@ Today, I am proudly announced that the Developer Version of Terminal Test Progra
 
 ## 2016-07-15 One more component
 Wait a second... There is something missing I guess. My logbook records that there are several URLs are forgot to check. The entire Weekly report section are missing. In this case, today I will focus on this section and try to have them done in no time.
+
+## 2016-07-18 Take a kernel or take several items?
+When dealing with the Modify report section, the data package sent to server was really complicated:
+```
+{"id":"578c4bcae4b0a2dbcccdf185","org":"ff808081557080a6015575e3d9300330","readRight":["ff808081557080a6015575e3d9310336"],"writeRight":["ff808081557080a6015575e3d9310336"],"write":false,"applyNo":null,"attList":null,"shareUserIds":["ff808081557080a6015575e3d9310336"],"createUser":"ff808081557080a6015575e3d9310336","createDate":1468812234197,"reportType":"WEEKEND","summary":"asdd1","plan":"asdsad2","startDate":1468771200000,"endDate":1469116800000,"createUserName":"胡欣","userDept":"ff808081557080a6015575e3d9310335","userDeptName":"一级部门","shareUsers":[{"prefixId":"p-ff808081557080a6015575e3d9310336","shareUserId":"ff808081557080a6015575e3d9310336","shareUserName":"胡欣"}]}
+```
+A dictionary structure has several elements that needs to change automatically at everytime. Two methods could be applied to finish this up:
+#### Method 1
+Just copy the previous return value of get_single_report part and delete ['message','success','status'], modify ['endDate','startDate'] and add ['discussLength']
+#### Method 2
+Copy the return kernel and passed following information ['id','userDept','userId'...]
