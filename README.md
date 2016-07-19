@@ -489,3 +489,6 @@ A dictionary structure has several elements that needs to change automatically a
 Just copy the previous return value of get_single_report part and delete ['message','success','status'], modify ['endDate','startDate'] and add ['discussLength']
 #### Method 2
 Copy the return kernel and passed following information ['id','userDept','userId'...]
+
+## 2016-07-19 Finish the Work Report and summary of untested terminals
+The hardest things ever in this functional test is the test of all terminals. Today a complete summary of tested and untested terminal table is completed. After the checking process in today, I will begain to finallize all terminals.
