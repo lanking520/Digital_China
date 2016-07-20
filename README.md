@@ -495,3 +495,79 @@ The hardest things ever in this functional test is the test of all terminals. To
 
 ## 2016-07-20 How time flies, a month!
 Well, now we have moved to the evaluation stage, the current job is to amend more terminals in the system design. The first one is the beatecard controller...
+
+#### Foundation of a Class
+```python
+class amend1:
+    def __init__(self):
+        self.iQuickerUrl = "http://testwww.iquicker.com.cn/iquicker_web/login"
+        self.personal_info = "http://testwww.iquicker.com.cn/iquicker_web/login/user"
+        self.error_count = []
+        self.url_list = []
+        self.port_type_warning = []
+        self.times = 0
+        self.my_id = ""
+        self.my_name = ""
+        self.function_name = {"login" : 1, "Get Personal info" : 2}
+        self.class_name = str(self.__class__).split('__main__.')[1]
+        self.result_dict = {self.class_name : []}
+        
+    def login(self):
+        print "in Login System..."
+        template = [[u'status', u'message', u'data', u'success'], [[u'orgs', u'initialised']]]
+        kernel = {"username":"15611765076","password":"MTIzNDU2Nzg=","rememberMe":True,"org":"ff808081557080a6015575e3d9300330"}
+        self.determine_error(POST(self.iQuickerUrl, kernel), "login",template, self.iQuickerUrl)
+        self.times += 1
+
+    def get_personal_info(self):
+        print "Getting Personal Info..."
+        template = [[[[u'deptManager', u'flag', u'flag2', u'id', u'name', u'org', u'parDept', u'prefixId', u'root', u'shortname', u'sn', u'status', u'subDept', u'usable', u'zfield1', u'zfield10', u'zfield2', u'zfield3', u'zfield4', u'zfield5', u'zfield6', u'zfield7', u'zfield8', u'zfield9']], [u'address', u'bankCard', u'birthday', u'createTime', u'department', u'email', u'enname', u'fax', u'hometown', u'id', u'idcard', u'img', u'innerEmail', u'innerEmailContact', u'isTrialAccount', u'itcode', u'joinTime', u'joindate', u'mobile', u'name', u'org', u'pinyin', u'pinyinPrefix', u'position', u'prefixId', u'qualifications', u'sex', u'shortname', u'signature', u'sn', u'status', u'statusReason', u'telephone', u'type']], [u'data', u'message', u'orgCode', u'orgInnerEmailStatus', u'orgLogoColour', u'orgLogoWhite', u'orgName', u'status', u'success', u'theme']]
+        my_data = GET(self.personal_info)
+        self.determine_error(my_data, "Get Personal info", template, self.personal_info)
+        self.my_id = json.loads(my_data)['data']['id']
+        self.my_name = json.loads(my_data)['data']['name']
+        self.times += 1
+        
+    def determine_error(self,data, name, template=[], url=""):
+        error = False
+        Failure_reason = ""
+        try:
+            result = json.loads(data)['success']
+        except:
+            result = "No Result"
+            print "There is no success options"
+            self.port_type_warning.append(self.function_name[name])
+        template = sort_my_array(template)
+        to_compare = sort_my_array(title_exporter(json.loads(data)))
+        if (data == None):
+            Failure_reason += "/No Data Coming Out"
+            error = True
+        if (not result):
+            Failure_reason += "/Not pass the system test"
+            error = True
+        if (template != to_compare):
+            Failure_reason += "/Kernel Comparison Failed"
+            error = True
+            print to_compare
+            print template
+        if error:
+            print Failure_reason
+            self.error_count.append(self.function_name[name])
+            self.url_list.append(url)
+        kernel = {"Name" : name, "URL" : url, "Success" : result, "Failure Reason": Failure_reason}
+        self.result_dict[self.class_name].append(kernel)
+        return data
+
+    def show_off_all_data(self):
+        print "................................................"
+        print ".........Attendance Function Summary............"
+        print "Function runs: " + str(self.times) + " times"
+        print "Error Counts: " + str(len(self.error_count)) + " times"
+        print "Failure in: " + str(self.error_count)
+        print "Not supported port: " + str(self.port_type_warning)
+        print "Failure Url:"
+        for url in self.url_list:
+            print url
+        print "Please check the dictionary for more information"
+        print "...............Thank you........................"
+```
