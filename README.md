@@ -492,3 +492,6 @@ Copy the return kernel and passed following information ['id','userDept','userId
 
 ## 2016-07-19 Finish the Work Report and summary of untested terminals
 The hardest things ever in this functional test is the test of all terminals. Today a complete summary of tested and untested terminal table is completed. After the checking process in today, I will begain to finallize all terminals.
+
+## 2016-07-20 How time flies, a month!
+Well, now we have moved to the evaluation stage, the current job is to amend more terminals in the system design. The first one is the beatecard controller...
