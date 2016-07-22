@@ -571,3 +571,5 @@ class amend1:
         print "Please check the dictionary for more information"
         print "...............Thank you........................"
 ```
+## 2016-07-22 Amend the second day
+Without much sufficient time, most of the weight are placed on the final terminals addition.
