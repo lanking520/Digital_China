@@ -573,3 +573,11 @@ class amend1:
 ```
 ## 2016-07-22 Amend the second day
 Without much sufficient time, most of the weight are placed on the final terminals addition.
+
+## 2016-07-22 Order matters!!
+Today I have just figured out the old problem in the "Notice" Section. With Identical Information provided, take a look at the following two address:
+```html
+http://testwww.iquicker.com.cn/iquicker_web/task/datas/page?pageNo=1&pageSize=999&search_IS_dealState=0&sortInfo=DESC_createTime
+http://testwww.iquicker.com.cn/iquicker_web/notice/datas/page?sortInfo=DESC_createTime&search_IS_dealState=0&pageSize=999&pageNo=1
+```
+If you happened have the cookiee, you can try this by simple clicking and see the difference.
