@@ -581,3 +581,11 @@ http://testwww.iquicker.com.cn/iquicker_web/task/datas/page?pageNo=1&pageSize=99
 http://testwww.iquicker.com.cn/iquicker_web/notice/datas/page?sortInfo=DESC_createTime&search_IS_dealState=0&pageSize=999&pageNo=1
 ```
 If you happened have the cookiee, you can try this by simple clicking and see the difference.
+
+［update] My fault... The previous two are different!!!
+```
+http://testwww.iquicker.com.cn/iquicker_web/notice/datas/page?pageNo=1&pageSize=999&search_IS_readState=0&search_IS_type=%E7%B3%BB%E7%BB%9F%E9%80%9A%E7%9F%A5&sortInfo=DESC_sendTime
+http://testwww.iquicker.com.cn/iquicker_web/notice/datas/page?search_IS_type=%CF%B5%CD%B3%CD%A8%D6%AA&sortInfo=DESC_sendTime&pageSize=20&pageNo=1
+```
+Diffference comes to "系统通知“， try again
+```
