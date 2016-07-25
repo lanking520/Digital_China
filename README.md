@@ -589,3 +589,6 @@ http://testwww.iquicker.com.cn/iquicker_web/notice/datas/page?search_IS_type=%CF
 ```
 Diffference comes to "系统通知“， try again
 ```
+ -*- coding: utf-8 -*-
+```
+Add this into the title screen of Python code and it will work out the problem now.
