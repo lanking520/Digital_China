@@ -574,7 +574,7 @@ class amend1:
 ## 2016-07-22 Amend the second day
 Without much sufficient time, most of the weight are placed on the final terminals addition.
 
-## 2016-07-22 Order matters!!
+## 2016-07-25 Order matters!!
 Today I have just figured out the old problem in the "Notice" Section. With Identical Information provided, take a look at the following two address:
 ```html
 http://testwww.iquicker.com.cn/iquicker_web/task/datas/page?pageNo=1&pageSize=999&search_IS_dealState=0&sortInfo=DESC_createTime
@@ -592,3 +592,6 @@ Diffference comes to "系统通知“， try again
  -*- coding: utf-8 -*-
 ```
 Add this into the title screen of Python code and it will work out the problem now.
+
+## 2016-07-26 Trip to Suzhou
+Finish the last terminal now. Minor problem, update with another beta version... Will update in 29th.
