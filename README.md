@@ -594,4 +594,20 @@ Diffference comes to "系统通知“， try again
 Add this into the title screen of Python code and it will work out the problem now.
 
 ## 2016-07-26 Trip to Suzhou
+
 Finish the last terminal now. Minor problem, update with another beta version... Will update in 29th.
+
+## 2016-08-09 Back to work
+
+After the job transfer to Lee, part of my work was submitted and verified. However, as more terminals are changed, there are some additional functions needed to be modified. Most of the work should be done in this week and a week left for summary.
+### Remaining problem: Rigid Code
+
+```
+Traceback (most recent call last):
+  File "/Users/lanking/PycharmProjects/robot_DC/web_logger.py", line 2393, in <module>
+    My_wreport.get_report_discuss()
+  File "/Users/lanking/PycharmProjects/robot_DC/web_logger.py", line 2029, in get_report_discuss
+    my_discuss_id = json.loads(my_discuss_id)['data'][0]['discussList']
+IndexError: list index out of range
+```
+As shown above, the code are too rigid as we need some preparation before we run it.
