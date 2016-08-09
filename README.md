@@ -610,4 +610,12 @@ Traceback (most recent call last):
     my_discuss_id = json.loads(my_discuss_id)['data'][0]['discussList']
 IndexError: list index out of range
 ```
-As shown above, the code are too rigid as we need some preparation before we run it.
+As shown above, the code are too rigid as we need some preparation before we run it. Problem was solved at 16:03
+
+### Version John
+
+Highlight:
+- This version solved the compability problem between Windows and Linux on the time module
+- Add "Message" Feature to the csv document
+- Improve the File name
+
